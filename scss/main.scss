@@ -4,3 +4,269 @@
 @import "normalize";
 @import "general";
 @import "blocks/blocks";
+
+
+.benefits {
+    padding-top: 57px;
+    
+    &__grid {
+        max-width: 1140px;
+        margin: 0 auto;
+        
+        &__title {
+            font-size: 36px;
+            line-height: 43px;
+            text-align: center;
+            color: #F1F1F1;
+            margin-bottom: 20px;
+        }
+        
+        &__list {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-column-gap: 58px;
+            grid-row-gap: 26px;
+            margin-bottom: 40px;
+            
+            &__box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                &__img {
+                    margin-bottom: 8px;
+                }
+                
+                &__title {
+                    width: 350px;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #2194FF;
+                    margin-bottom: 14px;
+                }
+                
+                &__text {
+                    font-weight: 300;
+                    line-height: 22px;
+                    color: #F1F1F1;
+                }
+            }
+        }
+    }
+    
+    &__warranty {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        
+        &__content {
+            transform: translateX(-40px);
+            
+            &__title {
+                width: 470px;
+                font-size: 35px;
+                line-height: 42px;
+                color: #F1F1F1;
+                margin-bottom: 20px;
+                
+                & span {
+                    font-family: 'Russo One';
+                    font-size: 35px;
+                    line-height: 42px;
+                    color: #2194FF;
+                }
+            }
+            
+            &--btn {
+                padding: 8px 12px;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 19px;
+                color: #F1F1F1;
+                background: #2194FF;
+            }
+        }
+    }
+}
+
+.typesTrack {
+    padding-top: 57px;
+    background: #2D3238;
+    
+    &__box {
+        max-width: 728px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__title {
+            font-size: 36px;
+            line-height: 43px;
+            text-align: center;
+            color: #2194FF;
+            margin-bottom: 35px;
+        }
+        
+        &__btns {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            
+            & button {
+                width: 164px;
+                padding: 10px 0;
+                background: rgba(241, 241, 241, 0.2);
+                border-radius: 20px;
+                border: none;
+                font-family: 'Russo One';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #fff;
+                text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+            }
+            
+            .btnActive {
+                background: #2194FF;
+            }
+        }
+        
+        &__imgs {
+            height: 310px;
+            margin-top: 37px;
+            
+            & img:nth-child(2),
+            :nth-child(3),
+            :nth-child(4) {
+                display: none;
+            }
+        }
+        
+        &--btn {
+            margin-bottom: 24px;
+            transform: translateY(-40px);
+            width: 295px;
+            background-image: url(../images/bg-btn2.png);
+            box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
+            border-radius: 11px;
+            padding: 30px 0;
+            font-family: 'Russo One';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #F1F1F1;
+            text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+.feedback {
+    padding: 40px 0;
+    
+    &__box {
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__title {
+            font-family: 'Russo One';
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 43px;
+            color: #F1F1F1;
+        }
+        
+        &__content {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            margin: 47px 0 24px;
+            
+            #feedbackLeft,
+            #feedbackRight {
+                width: 47px;
+                height: 72px;
+            }
+            
+            &__items {
+                display: flex;
+                gap: 23px;
+                padding: 40px;
+                width: 760px;
+                background: #F1F1F1;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 40px;
+                
+                &__imgs {
+                    & img {
+                        width: 200px;
+                        height: 235px;
+                        border-radius: 25px;
+                    }
+                    
+                    & img:nth-child(2),
+                    :nth-child(3),
+                    :nth-child(4),
+                    :nth-child(5) {
+                        display: none;
+                    }
+                }
+                
+                &__text {
+                    width: 445px;
+                    
+                    #feedbackName {
+                        margin: 10px 0 4px;
+                        font-family: 'Russo One';
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #2194FF;
+                    }
+                    
+                    #feedbackCountry {
+                        margin-bottom: 15px;
+                        font-family: 'Russo One';
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #2D2D2D;
+                    }
+                    
+                    #feedbackText {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 22px;
+                        color: #2D2D2D;
+                    }
+                }
+            }
+        }
+        
+        &__btns {
+            display: flex;
+            gap: 8px;
+            
+            & button {
+                width: 61px;
+                height: 18px;
+                background: rgba(241, 241, 241, 0.2);
+                border-radius: 20px;
+                border: none;
+            }
+            
+            .btnActive {
+                background: #2194FF;
+            }
+        }
+    }
+}
